@@ -1,0 +1,15 @@
+{
+  "name": "Remove wp icon",
+  "version": "1.0",
+  "description": "delete wp icon",
+  "permissions": [
+      "activeTab"
+    ], 
+ "content_scripts": [
+   {
+     "matches": ["https://*/*"],
+     "js": ["removeIcon.js"]
+   }
+ ],
+  "manifest_version": 2
+}
